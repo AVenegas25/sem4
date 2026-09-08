@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central de Emergencias PNP - Huaraz</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCAfOBk4oJ2vi7_lKLzyOhQ04P3k3W88U7MH5tj44XXQ&s=10" alt="Logo PNP" class="logo-img">
+      <span>PNP Huaraz 105</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#comisarias">Comisarías</a>
+      <a href="#denuncia" class="btn-nav">Denuncia Digital</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1nQbumaDjz7cKgweFO6r1U1ftL35ywOAr3Y0Z1zl4Eg&s=10" alt="Policía Nacional en Huaraz" class="hero-img">
+      <h1>Central de Emergencias PNP - Huaraz</h1>
+      <p>Atención inmediata las 24 horas para la seguridad y tranquilidad de nuestra comunidad huaracina.</p>
+      <a href="tel:105" class="btn-primary">Llamar a Emergencias (105)</a>
+    </div>
+  </section>
+
+  <!-- SERVICIOS PRINCIPALES (SIN IMÁGENES) -->
+  <section id="servicios" class="container">
+    <h2 class="section-title">Servicios de Atención Ciudadana</h2>
+    <div class="grid-services">
+      
+      <div class="card">
+        <h3>Reporte de Emergencias</h3>
+        <p>Línea directa para atención de robos, accidentes de tránsito y situaciones de peligro inminente.</p>
+      </div>
+
+      <div class="card">
+        <h3>Comisaría Más Cercana</h3>
+        <p>Ubicación y contacto de las dependencias policiales operativas en el distrito de Huaraz e Independencia.</p>
+      </div>
+
+      <div class="card">
+        <h3>Denuncia Digital</h3>
+        <p>Trámite virtual rápido para pérdida de documentos personales, licencias de conducir y tarjetas.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="comisarias" class="container">
+    <h2 class="section-title">Comisarías en Huaraz</h2>
+    <div class="grid-services">
+
+      <div class="card card-info">
+        <h3>Comisaría Central Huaraz</h3>
+        <p><strong>Dirección:</strong> Av. Luzuriaga N° 450</p>
+        <p><strong>Teléfono:</strong> (043) 42-2121</p>
+      </div>
+
+      <div class="card card-info">
+        <h3>Comisaría Tacllán</h3>
+        <p><strong>Dirección:</strong> Av. Confraternidad Sur S/N</p>
+        <p><strong>Teléfono:</strong> (043) 42-1515</p>
+      </div>
+
+      <div class="card card-info">
+        <h3>Comisaría de Monterrey</h3>
+        <p><strong>Dirección:</strong> Plaza de Armas de Monterrey</p>
+        <p><strong>Teléfono:</strong> (043) 42-8090</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="denuncia" class="container">
+    <div class="form-box">
+      <h2 class="section-title">Registro de Denuncia Digital</h2>
+      <p>Ingrese sus datos para emitir su informe digital por pérdida de documentos:</p>
+      
+      <form action="#" method="POST">
+        <label for="dni">Número de DNI</label>
+        <input type="text" id="dni" name="dni" placeholder="Ej. 70123456" required>
+
+        <label for="nombre">Nombres y Apellidos</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+        <label for="tipo_hecho">Tipo de Incidente</label>
+        <select id="tipo_hecho" name="tipo_hecho" required>
+          <option value="">-- Seleccionar opción --</option>
+          <option value="perdida">Pérdida de Documentos</option>
+          <option value="hurto">Robo / Hurto</option>
+          <option value="otro">Otro Suceso</option>
+        </select>
+
+        <label for="mensaje">Detalle de la Ocurrencia</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describa el lugar, fecha y hora del suceso..." required></textarea>
+
+        <button type="submit" class="btn-primary">Enviar Denuncia</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Policía Nacional del Perú - VIII MACREPOL ÁNCASH - IX VII REGPOL Huaraz</p>
+  </footer>
+
+</body>
+</html>
