@@ -67,7 +67,6 @@ body {
   border-radius: 4px;
 }
 
-/* PORTADA HERO */
 .hero {
   background: linear-gradient(rgba(0, 43, 21, 0.85), rgba(0, 43, 21, 0.85)), 
               url('https://via.placeholder.com/1200x600') center/cover no-repeat;
